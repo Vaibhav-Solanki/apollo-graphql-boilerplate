@@ -7,11 +7,11 @@ export function up (knex) {
     .createTable('users', function (table) {
       table.increments('id').notNullable().primary()
       table.string('username').notNullable().unique()
-      table.string('full_name').notNullable();
-      table.string('bio');
-      table.integer('followers_count').unsigned().defaultTo(0);
-      table.integer('following_count').unsigned().defaultTo(0);
-      table.integer('post_count').unsigned().defaultTo(0);
+      table.string('full_name').notNullable()
+      table.string('bio')
+      table.integer('followers_count').unsigned().defaultTo(0)
+      table.integer('following_count').unsigned().defaultTo(0)
+      table.integer('post_count').unsigned().defaultTo(0)
       table.string('email').unique()
       table.string('password')
       table.string('user_type').notNullable()
