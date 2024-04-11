@@ -5,3 +5,4 @@ package-lock.json
 /.idea
 example/index.html
 src/config/service-account-file.json
+index.js
