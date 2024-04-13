@@ -2,25 +2,19 @@
   "name": "apollo-graphql-boilerplate",
   "version": "1.0.0",
   "description": "",
-  "main": "server.js",
-  "type": "module",
+  "main": "server.ts",
   "scripts": {
-    "start": "node server.js",
-    "dev": "NODE_ENV=local nodemon server.js",
-    "lintfix": "eslint --fix ./ "
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/Vaibhav-Solanki/apollo-graphql-boilerplate.git"
+    "start": "node server.ts",
+    "dev": "nodemon server.ts"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "configcat-node": "^11.2.0",
+    "configcat-node": "^11.3.0",
     "dotenv": "^16.4.5",
     "firebase-admin": "^12.0.0",
-    "firebase-functions": "^4.8.0",
+    "firebase-functions": "^4.9.0",
     "glob-promise": "^6.0.5",
     "graphql": "^16.8.1",
     "graphql-yoga": "^5.3.0",
@@ -28,18 +22,16 @@
     "knex": "^3.1.0",
     "node-cache": "^5.1.2",
     "objection": "^3.1.4",
-    "pg": "^8.11.3",
+    "pg": "^8.11.5",
+    "uuid": "^9.0.1",
     "winston": "^3.13.0"
   },
   "devDependencies": {
-    "@eslint/eslintrc": "^3.0.2",
-    "@eslint/js": "^9.0.0",
-    "eslint": "^8.57.0",
-    "eslint-config-standard": "^17.1.0",
-    "eslint-plugin-import": "^2.29.1",
-    "eslint-plugin-n": "^16.6.2",
-    "eslint-plugin-promise": "^6.1.1",
-    "globals": "^15.0.0",
-    "nodemon": "^3.1.0"
+    "@types/node": "20.12.7",
+    "@types/uuid": "^9.0.8",
+    "cross-env": "7.0.3",
+    "ts-node": "10.9.2",
+    "ts-node-dev": "2.0.0",
+    "typescript": "5.4.5"
   }
 }
